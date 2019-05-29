@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>Conference Organizer</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+        <!-- CSS scripts -->
+        <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/toastr.min.css" />
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="assets/css/custom-css/registration-css.css" />
+	
+	</head>
+
+	<body>
+
+            <!-- Main part -->
+			<section id="main-part">
+			<div class="inner">
+
+                <form id="registration-form" action="/action_page.php" >
+                    <div class="container">
+                        <h1 class="title">Sign Up</h1>
+                        <p class="subtitle">Please fill in this form to create an account.</p>
+                        <p>Already have an account? <a href="login.html" style="color:#6cc091">Log In</a>.</p>
+
+                        <hr>
+                    
+                        <input type="text" placeholder="Enter Name and Surname" name="name" id="name" >
+
+                        <input type="text" placeholder="Enter E-mail" name="email" id="email">
+                    
+                        <input type="password" placeholder="Enter Password" name="password" id="password" >
+                    
+                        <input type="password" placeholder="Repeat Password" name="password_repeat" id="password_repeat" >
+            
+                        
+                        <p>By creating an account you agree to our <a href="#" style="color:#6cc091">Terms & Privacy</a>.</p>
+
+                        <div class="clearfix">
+                            <button type="button" onclick="location.href = 'index.html';" class="cancelbtn">Cancel</button>
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                        </div>
+                    </div>
+                    </form>
+
+				</div>
+			</section>
+    
+    
+        <!-- JS Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="assets/js/jquery.validate.min.js"></script>
+        <script src="assets/js/underscore-min.js"></script>
+        <script src="assets/js/form_validation.js"></script>
+        <script src="assets/js/toastr.min.js"></script>
+        <script src="assets/js/additional-methods.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="assets/js/custom-js/registration-js.js"></script>
+    </body>
+</html>

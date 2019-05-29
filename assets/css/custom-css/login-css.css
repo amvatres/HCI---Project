@@ -1,0 +1,279 @@
+/* Custom CSS for Conference Organizer - login page */
+
+@charset "UTF-8";
+@import url(../font-awesome.min.css);
+@import "//fonts.googleapis.com/css?family=Ubuntu";
+
+
+
+/*---------------------------------------------------*/
+/* Generalities */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, strong {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+
+ footer, header, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/*---------------------------------------------------*/
+/* Basics and common styles */
+
+@-ms-viewport {
+	width: device-width;
+}
+
+body {
+	-ms-overflow-style: scrollbar;
+}
+
+body {
+	background: #fff;
+}
+
+body, input {
+	color: #9a9a9a;
+	font-family: Ubuntu;
+	font-size: 14pt;
+	font-weight: 400;
+	line-height: 1.65;
+}
+
+a {
+	color: #6cc091;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+strong {
+	color: #555;
+	font-weight: 600;
+}
+
+ i {
+	font-style: italic;
+}
+
+p {
+	margin: 0 0 32px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #555;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0 0 16px 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 29.6px;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+	
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 14.4px;
+}
+
+h6 {
+	font-size: 11.px;
+}
+
+hr {
+	border: 0;
+	border-bottom: solid 1px #dbdbdb;
+	margin: 32px 0;
+}
+
+hr.major {
+	margin: 48px 0;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.inner {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/*---------------------------------------------------*/
+/* Main part */
+
+#main-part {
+	padding: 50px 0 144px 0;
+	background-image: url(../../../images/background.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+    position: relative;
+    height: 100%;
+
+}
+
+#main-part:before {
+	content: '';
+	background: rgba(75, 75, 93, 0.85);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+#main-part .inner {
+	position: relative;
+	z-index: 10005;
+	padding-top: 5px;
+}
+
+
+/*---------------------------------------------------*/
+/* Form */
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius:10px;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: rgb(207, 240, 200);
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  button {
+    display:inline-block;
+    padding:8px 48px;
+    border:2.56px solid #FFFFFF;
+    margin:0 4.8px 4.8px 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:Ubuntu;
+    font-weight:400;
+    text-align:center;
+    transition: all 0.15s;
+    color: #fff;
+    background-color: transparent;
+    border-radius:10px;
+  }
+  
+  .loginbtn:hover {
+    color:#6cc091;
+	  border-color:#6cc091;
+  }
+
+  .cancelbtn:hover {
+    color:#e42c1f;
+    border-color:#e42c1f;
+  }
+
+  .loginbtn:active {
+    color:#6cc091;
+	  border-color:#6cc091;
+  }
+
+  .cancelbtn:active {
+    color:#e42c1f;
+    border-color:#e42c1f;
+  }
+  
+  .cancelbtn {
+    padding: 14px 20px;
+  }
+
+  .loginbtn {
+    padding: 14px 20px;
+  }
+  
+  .cancelbtn, .loginbtn {
+    float: center;
+    width: 120px;
+    height:60px;
+  }
+  
+  .container {
+    padding: 50px;
+    width:70%;
+    height:50%
+  }
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: #6cc091;
+    font-size:32px;
+    font-weight: bold;
+    font-family: Ubuntu;
+  }
+
+  .subtitle{
+    color: #fff;
+    font-size:20px;
+    font-family: Ubuntu;
+  }
+
+
+  /*---------------------------------------------------*/
+  /* Responsive */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .loginbtn {
+       width: 100%;
+    }
+  }
+
+
+	
