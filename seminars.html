@@ -30,16 +30,18 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/gijgo.min.css" rel="stylesheet">
 
-    <link href="assets/css/custom-css/home-css.css" rel="stylesheet">
+
+    <link href="assets/css/custom-css/seminars-css.css" rel="stylesheet">
 
 
   </head>
 
   <body>
 
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
-      <h5 class="my-0 mr-md-auto font-weight-normal">Conference Organizer</h5>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+      <h5 class="my-0 mr-md-auto font-weight-normal" onclick="home.html">Conference Organizer</h5>
       <nav class="my-2 my-md-0 mr-md-3">
 
           <div class="dropdown" >
@@ -51,7 +53,6 @@
                 <a href="plays.html">Plays</a>
               </div>
             </div>
-
 
               <div class="dropdown" >
                   <button class="btn dropbtn" onclick="location.href = 'contactAndFAQ.html';">Contact and FAQ</button>
@@ -71,74 +72,99 @@
             <p>Are you sure that you want to log out?</p>
           </div>
           <div class="modal-footer">
-              <button type="button" onclick="location.href = 'home.html';" class="btn btn-red" data-dismiss="modal">No, cancel.</button>
+              <button type="button" onclick="location.href" ;" class="btn btn-red" data-dismiss="modal">No, cancel.</button>
             <button type="button" onclick="location.href = 'index.html';" class="btn btn-green" data-dismiss="modal">Yes, log out.</button>
           </div>
         </div>
       </div>
     </div>
+    <button type="button" class="btn btn-secondary backbutton" onclick="goBack()">Back</button>
 
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Pricing</h1>
-      <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
-    </div>
+      <h1 class="display-4">Seminars</h1>
+      <p class="lead">List of all seminars that are going to happen in the time interval that you picked. </p>
+      <p class="lead">You may want to change filters for time and place.</p>
+      <div class="pickers">
+          <input id="datepicker"  width="270" value="Chose date"/>
+
+          <select class="form-control place-select" id="haha" value="Chose place">
+            <option>Sarajevo</option>
+            <option>Banja Luka</option>
+            <option>Tuzla</option>
+            <option>Bijeljina</option>
+            <option>Zenica</option>
+            <option>Gračanica</option>
+            <option>Brčko</option>
+            <option>Mostar</option>
+          </select>
+        </div>
+      </div>
+     
 
     <div class="container">
       <div class="card-deck mb-3 text-center">
         <div class="card mb-4 box-shadow">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Free</h4>
+            <h4 class="my-0 font-weight-normal">Most Expensive</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+            <h1 class="card-title pricing-card-title">  <small class="text-muted">SSST Winter School</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>10 users included</li>
-              <li>2 GB of storage</li>
-              <li>Email support</li>
-              <li>Help center access</li>
+              <li>Educational seminars</li>
+              <li>Special guests</li>
+              <li>Organized by Diplomacy</li>
+              <li><strong>Sarajevo, May 15th</strong></li>
             </ul>
-            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+            <button type="button" onclick="location.href = 'seminar.html';" class="btn btn-lg btn-block btn-outline-success">View more</button>
           </div>
         </div>
         <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Pro</h4>
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Most Attractive</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">  <small class="text-muted">Data Science - Workshop</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>513 places left</li>
+                <li>SStanford Professor</li>
+                <li>Organized by ACM </li>
+                <li><strong>Sarajevo, September 9th</strong></li>
+              </ul>
+              <button type="button" onclick="location.href = 'seminar.html';" class="btn btn-lg btn-block btn-outline-success">View more</button>
+            </div>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>20 users included</li>
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-          </div>
-        </div>
-        <div class="card mb-4 box-shadow">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
-          </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>30 users included</li>
-              <li>15 GB of storage</li>
-              <li>Phone and email support</li>
-              <li>Help center access</li>
-            </ul>
-            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-          </div>
-        </div>
-      </div>
-
+          <div class="card mb-4 box-shadow">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Newest</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">  <small class="text-muted">Architectural seminar</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>234 places left</li>
+                  <li>5 speakers</li>
+                  <li>Organized by Radio Mix</li>
+                  <li><strong>Sarajevo, December 4th </strong></li>
+                </ul>
+                <button type="button" onclick="location.href = 'seminar.html';" class="btn btn-lg btn-block btn-outline-success">View more</button>
+              </div>
+            </div>
       
     </div>
 
     <!-- JS Scripts -->
-    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/gijgo.min.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            uiLibrary: 'bootstrap'
+        });
+      function goBack() {
+        window.history.back();
+      }
+
+    </script>
 
   </body>
 </html>

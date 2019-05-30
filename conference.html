@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Conference Organizer</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
+  <title>Pricing example for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/custom-css/conference-css.css" rel="stylesheet">
+</head>
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Conference Organizer</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+
+        <div class="dropdown" >
+            <button class="btn dropbtn">All events</button>
+            <div class="dropdown-content" style="left:0;">
+              <a href="#">Concerts</a>
+              <a href="#">Conferences</a>
+              <a href="#">Seminars</a>
+              <a href="#">Plays</a>
+            </div>
+          </div>
+
+          <div class="dropdown" >
+              <button class="btn dropbtn">Current events</button>
+              <div class="dropdown-content" style="left:0;">
+                  <a href="#">Concerts</a>
+                  <a href="#">Conferences</a>
+                  <a href="#">Seminars</a>
+                  <a href="#">Plays</a>
+              </div>
+            </div>
+
+            <div class="dropdown" >
+                <button class="btn dropbtn" onclick="location.href = 'contactAndFAQ.html';">Contact and FAQ</button>
+                
+              </div>
+          
+    </nav>
+    <button href="index.html" class="btn btn-green" data-toggle="modal" data-target="#myModal">Log Out</a>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Log Out</h4>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure that you want to log out?</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" onclick="location.href = 'home.html';" class="btn btn-red" data-dismiss="modal">No, cancel.</button>
+          <button type="button" onclick="location.href = 'index.html';" class="btn btn-green" data-dismiss="modal">Yes, log out.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container">
+
+  
+      <main role="main">
+  
+        
+  
+        <div class="container marketing">
+  
+          <!-- Three columns of text below the carousel -->
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="images/speaker1.jpg" alt="Bill Gates" width="140" height="140">
+              <h2>Bill Gates</h2>
+              <p><strong>Speaker 1</strong>: American business magnate, investor, author, philanthropist, and humanitarian</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="rounded-circle" src="images/speaker2.jpg" alt="Mark Zuckerberg" width="140" height="140">
+              <h2>Mark Zuckerberg</h2>
+              <p><strong>Speaker 2</strong>: American technology entrepreneur and philanthropist,co-founding and leading Facebook as its chairman and chief executive officer</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+            <img class="rounded-circle" src="images/speaker3.jpg" alt="Steve Jobs" width="140" height="140">
+            <h2>Steve Jobs</h2>
+            <p><strong>Speaker 3</strong>: American business magnate and investor. He was the chairman, chief executive officer, and co-founder of Apple Inc</p>
+          </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
+  
+  
+          <!-- START THE FEATURETTES -->
+  
+          <hr class="featurette-divider">
+  
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
+          </div>
+  
+          <hr class="featurette-divider">
+  
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
+          </div>
+  
+          <hr class="featurette-divider">
+  
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+              <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+            <div class="col-md-5">
+              <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
+          </div>
+  
+          <hr class="featurette-divider">
+  
+          <!-- /END THE FEATURETTES -->
+  
+        </div><!-- /.container -->
+  
+  
+        <!-- FOOTER -->
+        <footer class="container">
+          <p class="float-right"><a href="#">Back to top</a></p>
+          <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+      </main>
+  
+  </div>
+
+  <!-- JS Scripts -->
+  <script src="assets/js/jquery.slim.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+
+</body>
+</html>

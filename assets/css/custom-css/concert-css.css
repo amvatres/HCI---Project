@@ -1,0 +1,254 @@
+/* Custom CSS for Conference Organizer - concerts page */
+
+@charset "UTF-8";
+@import url(../font-awesome.min.css);
+@import "//fonts.googleapis.com/css?family=Ubuntu";
+
+/*---------------------------------------------------*/
+/* Bootstrap */
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+    background-color: #777;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  @media (min-width: 62em) {
+  .featurette-heading {
+      margin-top:50px;
+  }
+}
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+  }
+  .featurette{
+    font-family:Ubuntu;
+  }
+  
+  .col-md-5{
+    padding-left:150px;
+  }
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+/*---------------------------------------------------*/
+/* Buttons */
+
+.btn-green {
+  background-color:#6cc091;
+  border-color:#6cc091;
+  color: #fff;
+  border:none;
+}
+
+.btn-green:not(:disabled):not(.disabled).active, .btn-green:not(:disabled):not(.disabled):active, .show>.btn-green.dropdown-toggle {
+  color: #fff;
+  background-color: #6cc091;
+  border-color: #6cc091;
+  border:none;
+}
+
+a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.btn-red {
+  background-color:#dc3545;
+  border-color:#dc3545;
+  color: #fff;
+  border:none;
+}
+
+.btn-red:not(:disabled):not(.disabled).active, .btn-red:not(:disabled):not(.disabled):active, .show>.btn-red.dropdown-toggle {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  border:none;
+}
+
+.btn-red:hover {
+  background-color:#dc3545;
+  border-color:#dc3545;
+  color: #fff;
+  border:none;
+}
+
+.btn-outline-success {
+    color: #6cc091;
+    background-color: #fff;
+    background-image: none;
+    border-color: #6cc091;
+}
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: #6cc091;
+    background-color: #fff;
+    background-image: none;
+    border-color: #6cc091;
+}
+
+.btn-outline-success:hover {
+    color: #6cc091;
+    background-color: #fff;
+    background-image: none;
+    border-color: #6cc091;
+}
+.backbutton2{
+    position:relative;
+    background-color:#fff;
+    border-color:rgb(207, 203, 203);
+    color:rgb(207, 203, 203);
+
+}
+/*---------------------------------------------------*/
+/* Navbar */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #fff;}
+
+/*---------------------------------------------------*/
+/* Modal */
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-header {
+  padding-left: 370px;
+}
+
+.modal-footer{
+  padding-right: 270px;
+}
+
+/*---------------------------------------------------*/
+/* Others */
+
+.display-4 {
+    color:#6cc091;
+}
+.lead{
+    color:#b3aeae;
+    font-size:15px;
+}
+#datepicker{
+    margin:auto;
+    width:270px;
+    display:inline-block;
+    border-radius: 5px;
+}
+.place-select{
+    width:270px;
+    position: relative;
+    top: -38px;
+    left: 290px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.card-header{
+    background-color:#6cc090b4;
+    border-bottom: #6cc090b4;
+}
+
+
+

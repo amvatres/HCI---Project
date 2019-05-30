@@ -1,4 +1,4 @@
-/* Custom CSS for Conference Organizer - home page */
+/* Custom CSS for Conference Organizer - concerts page */
 
 @charset "UTF-8";
 @import url(../font-awesome.min.css);
@@ -33,8 +33,6 @@ html {
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
-/*---------------------------------------------------*/
-/* Bootstrap */
 
 body {
   line-height: 1;
@@ -95,6 +93,35 @@ a{
   color: #fff;
   border:none;
 }
+
+.btn-outline-success {
+    color: #6cc091;
+    background-color: #fff;
+    background-image: none;
+    border-color: #6cc091;
+}
+.btn-outline-success:not(:disabled):not(.disabled).active, .btn-outline-success:not(:disabled):not(.disabled):active, .show>.btn-outline-success.dropdown-toggle {
+    color: #6cc091;
+    background-color: #fff;
+    background-image: none;
+    border-color: #6cc091;
+}
+
+.btn-outline-success:hover {
+    color: #6cc091;
+    background-color: #fff;
+    background-image: none;
+    border-color: #6cc091;
+}
+.backbutton{
+    position:relative;
+    margin-left:300px;
+    margin-top:30px;
+    background-color:#fff;
+    border-color:rgb(207, 203, 203);
+    color:rgb(207, 203, 203);
+
+}
 /*---------------------------------------------------*/
 /* Navbar */
 .dropdown-content {
@@ -149,4 +176,35 @@ a{
 .modal-footer{
   padding-right: 270px;
 }
+
+/*---------------------------------------------------*/
+/* Others */
+
+.display-4 {
+    color:#6cc091;
+}
+.lead{
+    color:#b3aeae;
+    font-size:15px;
+}
+#datepicker{
+    margin:auto;
+    width:270px;
+    display:inline-block;
+    border-radius: 5px;
+}
+.place-select{
+    width:270px;
+    position: relative;
+    top: -38px;
+    left: 290px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.card-header{
+    background-color:#6cc090b4;
+    border-bottom: #6cc090b4;
+}
+
+
 
