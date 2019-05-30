@@ -143,7 +143,7 @@ a{
 }
 
 .modal-header {
-  padding-left: 370px;
+  padding-left: 350px;
 }
 
 .modal-footer{
@@ -256,8 +256,9 @@ a{
   font-family:Ubuntu;
   font-size:15px;
 }
-@media (min-width: 768px) {
-  modal-content {
+
+@media screen (min-width: 768px) {
+  .modal-content {
     text-align: center;
   }
   

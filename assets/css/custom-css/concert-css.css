@@ -252,7 +252,7 @@ a{
 
 
 
-@media (min-width: 768px) {
+@media screen (min-width: 768px) {
   modal-content {
     text-align: center;
   }

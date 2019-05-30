@@ -216,8 +216,8 @@ a{
     margin-left:20px;
   }
 }
-@media (min-width: 768px) {
-  modal-content {
+@media screen (min-width: 768px) {
+  .modal-content {
     text-align: center;
   }
   

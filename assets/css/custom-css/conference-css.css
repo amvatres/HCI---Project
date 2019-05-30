@@ -238,7 +238,7 @@ a{
 }
 
 @media screen (min-width: 768px) {
-  modal-content {
+  .modal-content {
     text-align: center;
   }
   
