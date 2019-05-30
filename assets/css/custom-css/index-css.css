@@ -149,6 +149,7 @@ hr.major {
 	background-repeat: no-repeat;
 	text-align: center;
 	position: relative;
+	height:1200px;
 }
 
 #main-part:before {

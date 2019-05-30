@@ -252,3 +252,20 @@ a{
 
 
 
+@media (min-width: 768px) {
+  modal-content {
+    text-align: center;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+  }
+  
+  .modal-header {
+    padding-left: 200px;
+  }
+  
+  .modal-footer{
+    padding-right: 150px;
+}
+}

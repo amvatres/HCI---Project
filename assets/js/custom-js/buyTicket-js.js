@@ -1,4 +1,10 @@
+$('#datepicker').datepicker({
+    uiLibrary: 'bootstrap'
+});
 
+function goBack() {
+    window.history.back();
+}
 $(document).ready(function () {
 
 
@@ -22,7 +28,7 @@ $(document).ready(function () {
 
 
             if(credit_card=="123456789123" && code=="123"){
-                toastr.success('Ticket bought. Online version will be sent to your e-mail.');
+                toastr.info('Ticket bought. Online version will be sent to your e-mail.');
                 setTimeout(function () {
                      window.location = "concert.html";
                 }, 1000);
